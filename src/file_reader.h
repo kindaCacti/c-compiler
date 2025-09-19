@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "string.h"
+#include "./data_types/string.h"
 
 FILE* open_read_file(char* path){
     FILE* readFile = fopen(path, "r");

@@ -1,7 +1,7 @@
 #ifndef COMPILER
 #define COMPILER
 
-#include "string.h"
+#include "./data_types/string.h"
 #include "file_reader.h"
 
 void compile(char* inputFilePath, char* outputFilePath){

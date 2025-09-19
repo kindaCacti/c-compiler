@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "m_arena.h"
-#include "string.h"
+#include "./data_types/m_arena.h"
+#include "./data_types/string.h"
 #include "compiler.h"
 
 int32_t main(int32_t argc, char* argv[]){

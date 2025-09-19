@@ -6,10 +6,10 @@
 
 `_OPEN_PARENTHISIS` is `(` \
 `_CLOSE_PARENTHISIS` is `)` \
-`_OPEN_BRACKED` is `{`\
-`_CLOSE_BRACKED` is `}`\
+`_OPEN_BRACKET` is `{`\
+`_CLOSE_BRACKET` is `}`\
 `_OPEN_SQUARE_BRACKET` is `[`\
-`_CLOSE_SQUARE_BRACKET` is `]`\
+`_CLOSE_SQUARE_BRACKET` is `]`
 
 #### datatypes
 
@@ -27,7 +27,7 @@
 `_CONST` is `const`\
 `_DOUBLE` is `double`\
 `_EXTERN` is `extern`\
-`_STATIC` is `static`\
+`_STATIC` is `static`
 
 #### conditionals
 
@@ -37,32 +37,47 @@
 `_CASE` is `case`\
 `_DEFAULT` is `default`\
 `_BREAK` is `break`\
-`_CMP_EQ` is `==`\
-`_CMP_LT` is `<`\
-`_CMP_GT` is `>`\
-`_CMP_LEQ` is `<=`\
-`_CMP_GEQ` is `>=`\
-`_CMP_OR` is `||`\
-`_CMP_AND` is `&&`\
+`_EQ_EQ_SIGN` is `==`\
+`_LT_SIGN` is `<`\
+`_GT_SIGN` is `>`\
+`_LT_EQ_SIGN` is `<=`\
+`_GT_EQ_SIGN` is `>=`\
+`_PIPE_PIPE_SIGN` is `||`\
+`_AND_AND_SIGN` is `&&`
+
+#### loops
+
+`_GOTO` is `goto`\
+`_WHILE` is `while`\
+`_FOR` is `for`\
+`_DO` is `do`
 
 #### aritmetic
 
-`_ARI_PLUS` is `+`\
-`_ARI_MINUS` is `-`\
-`_ARI_MUL` is `*`\
-`_ARI_DIV` is `*`\
-`_ARI_OR` is `|`\
-`_ARI_AND` is `&`\
-`_ARI_XOR` is `^`\
-`_ARI_NOT` is `!`\
-`_ASI` is `=`\
-`_ASI_PLUS` is `+=`\
-`_ASI_MINUS` is `-=`\
-`_ASI_MUL` is `*=`\
-`_ASI_DIV` is `/=`\
-`_ASI_OR` is `|=`\
-`_ASI_AND` is `&=`\
-`_ASI_XOR` is `^=`\
+`_PLUS_SIGN` is `+`\
+`_MINUS_SIGN` is `-`\
+`_STAR_SIGN` is `*`\
+`_SLASH_SIGN` is `/`\
+`_PIPE_SIGN` is `|`\
+`_AND_SIGN` is `&`\
+`_ROOF_SIGN` is `^`\
+`_EXCLAM_SIGN` is `!`\
+`_EQ_SIGN` is `=`\
+`_PLUS_EQ_SIGN` is `+=`\
+`_MINUS_EQ_SIGN` is `-=`\
+`_STAR_EQ_SIGN` is `*=`\
+`_SLASH_EQ_SIGN` is `/=`\
+`_PIPE_EQ_SIGN` is `|=`\
+`_AND_EQ_SIGN` is `&=`\
+`_ROOF_EQ_SIGN` is `^=`
+
+#### other keywords
+
+`_STRUCT` is `struct`\
+`_UNION` is `union`\
+`_TYPEDEF` is `typedef`\
+`_ENUM` is `enum`
+
 
 #### identifiers
 
