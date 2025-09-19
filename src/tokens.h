@@ -1,6 +1,8 @@
 #ifndef TOKENS
 #define TOKENS
 
+#include "./data_types/trie.h"
+
 enum Tokens{
     //helpers
     _OPEN_PARENTHISIS,
@@ -34,10 +36,6 @@ enum Tokens{
     _EQ_EQ_SIGN,
     _LT_SIGN,
     _GT_SIGN,
-    _LT_EQ_SIGN,
-    _GT_EQ_SIGN,
-    _PIPE_PIPE_SIGN,
-    _AND_AND_SIGN,
     // loops
     _GOTO,
     _WHILE,
@@ -53,13 +51,6 @@ enum Tokens{
     _ROOF_SIGN,
     _EXCLAM_SIGN,
     _EQ_SIGN,
-    _PLUS_EQ_SIGN,
-    _MINUS_EQ_SIGN,
-    _STAR_EQ_SIGN,
-    _SLASH_EQ_SIGN,
-    _PIPE_EQ_SIGN,
-    _AND_EQ_SIGN,
-    _ROOF_EQ_SIGN,
     // other keywords
     _STRUCT,
     _UNION,
@@ -68,5 +59,10 @@ enum Tokens{
     // identifiers
     _IDENTIFIER
 };
+
+void load_tokens_to_trie(Trie* trie, M_Arena* arena){
+    trie_add_word(trie, "(", _OPEN_PARENTHISIS, arena);
+    trie_add_word(trie, ")", _CLOSE_PARENTHISIS, arena);
+}
 
 #endif

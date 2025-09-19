@@ -14,14 +14,14 @@ typedef struct {
 } String;
 
 void string_init(String *string){
-    string->ptr = calloc(1, sizeof(char));
+    string->ptr = malloc(sizeof(char));
     string->size = 0;
     string->maxSize = 0;
 }
 
 void string_increase_size(String* string){
     uint64_t newSize = (string->maxSize + 1) << 1;
-    void* newPointer = calloc(newSize, sizeof(char));
+    void* newPointer = malloc(newSize * sizeof(char));
     memcpy(newPointer, string->ptr, string->size * sizeof(char));
     string->maxSize = newSize;
 
@@ -48,13 +48,21 @@ void string_push_char(String *string, char c){
     }
     *((char*)string->ptr + string->size) = c;
     string->size += 1;
+    *((char*)string->ptr + string->size) = (char)0;
 }
 
 void string_pop_char(String *string){
     if(string->size < 0) return;
 
     string->size -= 1;
-    ((char*)string->ptr)[string->size] = 0;
+    ((char*)string->ptr)[string->size] = (char)0;
 }
+
+void string_clear(String *string){
+    string->size = 0;
+    ((char*)string->ptr)[string->size] = (char)0;
+}
+
+
 
 #endif

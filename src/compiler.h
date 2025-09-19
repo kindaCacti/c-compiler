@@ -3,6 +3,7 @@
 
 #include "./data_types/string.h"
 #include "file_reader.h"
+#include "lexer.h"
 
 void compile(char* inputFilePath, char* outputFilePath){
     String inputFileData;
@@ -11,7 +12,7 @@ void compile(char* inputFilePath, char* outputFilePath){
     FILE* inputFilePtr = open_read_file(inputFilePath);
     read_file(inputFilePtr, &inputFileData);
 
-    printf("%s\n", (char*)inputFileData.ptr);
+    generate_tree(&inputFileData);
 }
 
 #endif

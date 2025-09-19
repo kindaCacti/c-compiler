@@ -37,13 +37,8 @@
 `_CASE` is `case`\
 `_DEFAULT` is `default`\
 `_BREAK` is `break`\
-`_EQ_EQ_SIGN` is `==`\
 `_LT_SIGN` is `<`\
 `_GT_SIGN` is `>`\
-`_LT_EQ_SIGN` is `<=`\
-`_GT_EQ_SIGN` is `>=`\
-`_PIPE_PIPE_SIGN` is `||`\
-`_AND_AND_SIGN` is `&&`
 
 #### loops
 
@@ -63,13 +58,6 @@
 `_ROOF_SIGN` is `^`\
 `_EXCLAM_SIGN` is `!`\
 `_EQ_SIGN` is `=`\
-`_PLUS_EQ_SIGN` is `+=`\
-`_MINUS_EQ_SIGN` is `-=`\
-`_STAR_EQ_SIGN` is `*=`\
-`_SLASH_EQ_SIGN` is `/=`\
-`_PIPE_EQ_SIGN` is `|=`\
-`_AND_EQ_SIGN` is `&=`\
-`_ROOF_EQ_SIGN` is `^=`
 
 #### other keywords
 
